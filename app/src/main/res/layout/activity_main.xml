@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/player1EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Player 1 Name"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/player2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Player 2 Name"
+        android:layout_below="@id/player1EditText"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/rollButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player2EditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Losuj"/>
+
+    <Button
+        android:id="@+id/showHistoryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rollButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Historia"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showHistoryButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:text="0"/>
+
+</RelativeLayout>
