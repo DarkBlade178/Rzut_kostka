@@ -23,13 +23,22 @@
         android:layout_marginBottom="8dp"/>
 
     <Button
+        android:id="@+id/addPlayerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Player"
+        android:layout_below="@id/player2EditText"
+        android:layout_marginTop="8dp"
+        android:onClick="addPlayer"/>
+
+    <Button
         android:id="@+id/rollButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/player2EditText"
+        android:layout_below="@id/addPlayerButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="Losuj"/>
+        android:text="Roll Dice"/>
 
     <Button
         android:id="@+id/showHistoryButton"
@@ -38,7 +47,23 @@
         android:layout_below="@id/rollButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="Historia"/>
+        android:text="Show History"/>
+
+    <ScrollView
+        android:id="@+id/historyScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/showHistoryButton"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/historyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:textColor="@android:color/black"/>
+    </ScrollView>
 
     <TextView
         android:id="@+id/resultTextView"
